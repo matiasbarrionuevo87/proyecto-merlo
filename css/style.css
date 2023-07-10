@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+header nav {
+    background: linear-gradient(to right, black, grey);
+    display: flex;
+    justify-content: space-between;
+    height: 105px;
+    align-items: center;
+    
+}
+header nav a{
+    text-decoration: none;
+}
+
+
+.logo h2 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin: 30px;
+    transform: perspective(100px) rotateX(25deg)
+
+}
+
+
+.logo h2 span{
+    color: green;
+    font-size: 50px;
+    
+    
+}
+
+.logo h2 span:hover{
+    color: green;
+    font-size: 65px;
+   
+}
+
+header nav ul {
+    list-style: none;
+
+}
+header nav ul li {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul  :hover {
+    font-size: 25px;
+    text-decoration: underline white;
+}
+
+
+.carrusel {
+    width: 100%;
+    height: 100%;
+   
+}
+
+.carrusel img {
+    width: 100%;
+    height: 100%;
+}
+
+.cuerpo{
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+    display: grid;
+
+    grid-template-areas: 
+        "intro intro"
+        "video formulario"
+        "accesos accesos"
+        "footer footer";
+}
+
+
+main {
+    background-color: rgba(199, 245, 199, 0.562);
+}
+
+h1 {
+   text-align: center;
+   font-family: 'Oleo Script Swash Caps', cursive;
+   font-size:80px;
+   color: rgb(8, 63, 2);
+}
+
+.intro{
+    grid-area: intro;
+}
+
+div p {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    color: black;
+    text-align: center;
+}
+
+
+  
+.video {
+    margin: 10px;
+    padding: 10px;
+    grid-area: video;
+}
+
+.formulario {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    grid-area: formulario;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgba(199, 245, 199, 0.562);
+    height: 600px;
+    border: 7px solid grey;
+    border-radius: 10px;
+    justify-content: flex-start;
+}
+
+.accesos {
+    grid-area: accesos;
+    display: flex;
+    align-items: center;
+}
+.accesos p{
+    color: black;
+}
+
+.accesos img {
+    width: 60px;
+    height: 60px;
+}
+.accesos div {
+    background-color: rgba(127, 241, 155, 0.932);
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 4px;
+    margin: 4px;
+    height: 300px;
+}
+
+h2 {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    color: rgb(8, 63, 2);
+    
+}
+
+.accesos button {
+    display: inline-block;
+    background-color: white;
+    color: green;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.accesos button:hover {
+    background-color: rgb(1, 78, 1);
+    color: white;
+}
+
+footer {
+    background: linear-gradient(to right, rgb(1, 119, 17), rgb(61, 131, 92));
+    font-family: 'Oleo Script Swash Caps', cursive;
+    color: white;
+    height: 120px;
+    text-align: justify;
+    grid-area: footer;
+    border-radius: 20px;
+    
+}
+
+footer img{
+    height: 20px;
+    width: 20px;
+}
+footer div {
+    display: flex;
+    text-align: justify;
+    padding: 10px;
+}
+footer div h3 {
+    padding: 10px;
+}
+
+footer div ul {
+    padding: 10px;
+    list-style: none;
+}
+
+.altos-del-sol{
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    display: grid;
+
+    grid-template-areas: 
+        "titulo titulo"
+        "video video"
+        "parrafo parrafo"
+        "formulario mapa";
+
+        justify-items: center;
+}
+
+.link-altos{
+    grid-area: titulo;
+    
+}
+.subtitulo{
+    text-align: center;
+}
+
+.video-altos{
+    grid-area: video;
+}
+
+.parrafo-altos{
+    grid-area: parrafo;
+}
+
+.form-altos{
+    grid-area: formulario;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    grid-area: formulario;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgba(199, 245, 199, 0.562);
+    height: 600px;
+    border: 7px solid grey;
+    border-radius: 10px;
+    justify-content: flex-start;
+}
+
+.mapa-altos{
+    grid-area: mapa;
+}
+
+@media (max-width:500px) {
+    header nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        width: 400px;
+
+
+    }
+    header nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+   
+}
