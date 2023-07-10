@@ -160,6 +160,7 @@ h2 {
     font-size: 16px;
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s;
+    border-radius: 30px;
 }
 
 .accesos button:hover {
@@ -250,17 +251,95 @@ footer div ul {
         justify-content: center;
         align-items: center;
         height: 400px;
-        width: 400px;
-
-
+        width: 500px;
     }
+
     header nav ul{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        
-        
+        align-items: center;    
     }
-   
+
+    .cuerpo{
+        display: block;
+        justify-content: center;
+    }
+
+    .video{
+        position: relative;
+         width: 100%;
+        padding-bottom: 56.25%;
+    }
+   .video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   }
+
+   .accesos{
+    display: block;
+   }
+
+   .accesos div{
+    padding: 20px;
+    margin: 80px;
+    height: 350px;
+   }
+
+
+    footer{
+        height: auto;
+       
+
+}
+
+    footer div{
+    display: block;
+    text-align: center;
+  }
+
+ body{
+    background-color: rgba(199, 245, 199, 0.562);
+ }
+
+ .altos-del-sol{
+    display: block;
+    text-align: center;
+    padding: 15px;
+ }
+
+.video-altos{
+    position: relative;
+         width: 100%;
+        padding-bottom: 56.25%;
+}
+
+
+.video-altos iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.mapa-altos{
+    position: relative;
+     width: 100%;
+    padding-bottom: 56.25%;
+}
+
+.mapa-altos iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
 }
